@@ -42,16 +42,19 @@ Host lrdn*
 
 ## JupyterLab on a login node
 
-Run the following command from your local machine:
-
+Modify 'run_jupyter_leonard_login.sh' with your username. Then make it esecutable:
 ```bash
-ssh -L 8888:localhost:8888 mtagliaz@login.leonardo.cineca.it "jupyter-lab --no-browser --port=8888"
+chmod +x run_jupyter_leonard_login.sh"
 ```
 
-Then copy and paste into a browser on your local machine (or JupyterLab Desktop) the URL:
+Execute it:
+```bash
+./run_jupyter_leonard_login.sh"
+```
+Then copy and paste into a browser on your local machine (or JupyterLab Desktop) the URL, e. g.:
 
 ```
-http://localhost:8888/lab?token=...
+http://127.0.0.1:10000/lab?token=
 ```
 
 ---
